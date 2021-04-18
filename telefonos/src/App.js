@@ -13,7 +13,12 @@ const App = () => {
   }
 
   const personas = (event) =>{
-    setPersons(persons.concat({name:newName}))
+    const nombres = persons.map((item)=>{return item['name']})
+    if(nombres.includes(newName)){
+      window.alert(`${newName} Ya existe en el phonebook`)
+    } else {
+      setPersons(persons.concat({name:newName}))
+    }
     event.preventDefault()
   }
 
