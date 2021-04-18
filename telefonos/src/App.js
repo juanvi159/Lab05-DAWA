@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const App = () => {
-  
+  //componentes
   const [ persons, setPersons ] = useState([
     { name: 'Arto Hellas' }
   ]) 
@@ -17,7 +17,7 @@ const App = () => {
     event.preventDefault()
   }
 
-  
+  //retorno en la pagina
   return (
     <div>
       <h2>Phonebook</h2>
